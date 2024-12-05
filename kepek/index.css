@@ -5,8 +5,56 @@
     font-size: 10 pt;
     margin: 0px;
     padding: 0px;
+    justify-content: center;
 
 }
 body{
     background-image: url(black.png);
+}
+main{
+     display: grid;
+    grid-template-columns: 3fr 1fr; 
+    width: 90%;
+    max-width: 900px;
+    background-color: rgb(177, 190, 188);
+}
+
+header{
+   height: 300px;
+   background-size: cover;
+}
+
+
+nav:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+
+nav li{
+    font-weight:bold ;
+    list-style-type: none;
+
+}
+
+article{
+    text-align: justify;
+    
+}
+article p{
+    font-size: 10px;
+
+}
+article li{
+    list-style-type: square;
+    margin-left: 5%;
+
+}
+article h1{
+    font-size: 15px;
+}
+
+article img{
+    height: 400px;
+    width: 300px;
+    float: right;
 }

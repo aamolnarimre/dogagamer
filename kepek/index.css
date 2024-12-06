@@ -23,16 +23,19 @@ main{
 header{
    height: 300px;
    background-size: cover;
+   margin-bottom: 15px;
 }
 
 nav{
    
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 5fr; */
-  
-    word-spacing: 20px;
-    margin: 5px;
-    bo
+    display: grid;
+    grid-template-columns: .7fr 1fr 5fr; */
+    
+    /* word-spacing: 0px; */
+    margin-bottom: 10px;
+
+    background-color: blue;
+    
 
 
 }
@@ -49,8 +52,14 @@ nav li{
 }
 
 .fooldal{
-    margin: 2px;
-    border: .5px solid white;
+    /* margin-top: 2px; */
+    border-right: 1px solid white;
+    text-align: center;
+    margin: ;
+}
+.reg{
+    border-right: 1px solid white;
+    text-align: center;
 }
 
 
@@ -79,3 +88,4 @@ article img{
     width: 200px;
     float: right;
 }
+footer{background-color: orange;}

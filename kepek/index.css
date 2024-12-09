@@ -11,6 +11,10 @@
 body{
     background-image: url(black.png);
     justify-content: center;
+
+
+
+    
 }
 main{
      /* display: grid;
@@ -35,7 +39,8 @@ nav{
     margin-bottom: 10px;
 
     background-color: blue;
-    
+    border-bottom: 1px solid white;
+
 
 
 }
@@ -88,4 +93,61 @@ article img{
     width: 200px;
     float: right;
 }
-footer{background-color: orange;}
+footer{
+    background-color: orange;
+    text-align: center;
+
+    
+}
+
+/* Reszponzív beállítások mobilra EZT A RÉSZT CHATGPT CSINÁLTA*/
+@media (max-width:600px) {
+    body {
+        
+      font-size: 12px; /* Növelheted a betűméretet mobilon */
+    }
+  
+    main {
+      width: 100%; /* A szélesség 100% legyen mobilon */
+      padding: 10px; /* Kisebb margó, hogy ne lógjanak ki az elemek */
+    }
+  
+    header {
+      height: 200px; /* Csökkentheted a fejléces képet */
+    }
+  
+    nav {
+      grid-template-columns: 1fr; /* Mobilon a navigációs elemek egymás alatt */
+      text-align: center;
+    }
+  
+    nav li {
+      display: block; /* A navigációs elemek blokkjá alakítása, hogy egymás alá kerüljenek */
+      border: none; /* Eltávolítjuk a jobb oldali határvonalat */
+      background-color: brown;
+    }
+  
+    article {
+      text-align: left; /* Jobb olvashatóság érdekében balra igazítjuk a szöveget */
+    }
+  
+    article img {
+      width: 100%; /* A képet 100%-os szélességűvé tesszük, hogy kitöltse a rendelkezésre álló helyet */
+      height: auto; /* Arányos magasságot adunk */
+      float: none; /* Ne lebegjen jobbra */
+    }
+  
+    article h1 {
+      font-size: 18px; /* Növelheted a címek méretét mobilon */
+    }
+  
+    article li {
+      margin-left: 0; /* Mobilon ne legyen túl sok margó */
+    }
+  
+    footer {
+      font-size: 14px; /* Kisebb betűméretet adunk a lábléchez */
+      padding: 10px;
+    }
+  }
+
